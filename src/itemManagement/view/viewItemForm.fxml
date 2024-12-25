@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemManagement.controller.ViewItemController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="-1.0" prefHeight="52.0" prefWidth="594.0" style="-fx-background-color: #8080ff;" text="View Item Form">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="8.0" layoutY="72.0" prefHeight="241.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="txtCode" prefWidth="100.00006103515625" text="Item Code" />
+            <TableColumn fx:id="txtName" prefWidth="128.79998779296875" text="Item Name" />
+            <TableColumn fx:id="txtDesc" prefWidth="154.39996337890625" text="Item Description" />
+            <TableColumn fx:id="txtPrice" prefWidth="117.60003662109375" text="Item Price" />
+            <TableColumn fx:id="txtQTY" prefWidth="79.99993896484375" text="Item QTY" />
+        </columns>
+      </TableView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnReloadOnClick" text="Reload Table" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
